@@ -1,0 +1,465 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@600&display=swap");
+@import url("https://fonts.cdnfonts.com/css/fraunces-144pt-s000");
+
+:root {
+    --dark-purple: #24053e;
+    --green-Eucalyptus: #44ffa1;
+    --dark-grey: #584d62;
+    --ghost-white: #fcf8ff;
+    --white: #ffffff;
+
+    --l-line-spacing: 80px;
+    --m-line-spacing: 64px;
+    --s-line-spacing: 40px;
+    --reg-line-spacing: 32px;
+
+    --semi-bold: 600;
+
+    --heading-L: 80px;
+    --heading-M: 56px;
+    --heading-S: 32px;
+    --regular: 18px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: Fraunces;
+    src: url(./assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf);
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    height: 100dvh;
+    height: 100vh;
+}
+
+a {
+    color: black;
+}
+
+/* ----------- Hero items */
+.hero__section {
+    background-color: var(--dark-purple);
+    height: 482px;
+    color: var(--white);
+}
+
+.navbar {
+    padding: 2rem 1rem;
+}
+
+.navbar > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.apply_btn {
+    font-weight: 600;
+    font-size: 1em;
+    line-height: var(--reg-line-spacing);
+    border-bottom: 3px solid var(--green-Eucalyptus);
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}
+
+.apply_btn:hover,
+.apply_btn:active {
+    color: var(--green-Eucalyptus);
+}
+
+/*  */
+header {
+    margin-top: 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: Fraunces;
+    font-size: 50px;
+    font-weight: 100;
+    line-height: 55px;
+    margin-bottom: 40px;
+}
+
+header h1 > span {
+    border-bottom: 3px solid var(--green-Eucalyptus);
+}
+
+header a {
+    padding: 15px 24px;
+    background-color: var(--green-Eucalyptus);
+    font-weight: 600;
+    line-height: 32px;
+}
+
+header a:hover,
+header a:active {
+    border: 3px solid var(--green-Eucalyptus);
+    background-color: var(--dark-purple);
+    color: var(--green-Eucalyptus);
+}
+
+/* --------------------- main section starts here */
+main {
+    position: relative;
+}
+
+.wrapper {
+    background-color: var(--ghost-white);
+    padding-bottom: 40px;
+    padding: 1em;
+    margin-bottom: 100px;
+}
+
+.phone__img img {
+    width: 90%;
+    position: relative;
+    left: 30px;
+    bottom: 85px;
+}
+
+.cards-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.number {
+    height: 46px;
+    width: 48px;
+    border: 1px solid var(--dark-grey);
+    border-radius: 30.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark-grey);
+}
+
+.number p {
+    font-family: Fraunces;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 36px;
+    color: var(--dark-purple);
+}
+
+.cards-item h2 {
+    font-family: Fraunces;
+    color: var(--dark-purple);
+    line-height: 36px;
+    margin: 24px 0 16px 0;
+    text-align: center;
+}
+
+.cards__wrapper p {
+    text-align: center;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--dark-grey);
+}
+
+/* ------------------------ Profile Section */
+.profile__section {
+    max-width: 100%;
+    padding: 0 16px;
+}
+
+.profile__img {
+    padding: 0 40px;
+}
+
+.profile__img img {
+    width: 100%;
+}
+
+.profile__details {
+    background-color: var(--dark-purple);
+    color: var(--white);
+    padding: 2em;
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+}
+
+.profile__details h2 {
+    font-family: Fraunces;
+    font-weight: 100;
+    font-size: 2rem;
+    line-height: 48px;
+}
+
+.profile__details p {
+    padding: 16px 0 24px 0;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.profile__details a {
+    background-color: var(--green-Eucalyptus);
+    padding: 18px 24px;
+    font-weight: 700;
+    line-height: 2rem;
+    letter-spacing: -0.16px;
+}
+
+.profile__details a:hover,
+.profile__details a:active {
+    border: 3px solid var(--green-Eucalyptus);
+    background-color: var(--dark-purple);
+    color: var(--green-Eucalyptus);
+}
+
+/* ------------------------------------------- Footer */
+.footer {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 58px;
+}
+
+.social__handles {
+    display: flex;
+    gap: 28px;
+    margin-bottom: 65px;
+}
+
+/* ------------------------------------------ Media Quries 768px */
+@media screen and (min-width: 768px) {
+    .hero__section {
+        height: 540px;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .hero__section::before {
+        content: url(./assets/images/bg-pattern-1.svg);
+        position: absolute;
+        top: 100px;
+        left: -225px;
+    }
+
+    .hero__section::after {
+        content: url(./assets/images/bg-pattern-2.svg);
+        position: absolute;
+        right: 0;
+        top: 250px;
+        transform: translateX(50%);
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        width: 537px;
+        font-size: 60px;
+        font-weight: 300;
+        line-height: 70px;
+        letter-spacing: 3px;
+    }
+
+    header a {
+        font-weight: 700;
+        line-height: 2em;
+        font-size: 16px;
+    }
+
+    .navbar {
+        padding: 32px 40px;
+    }
+
+    .apply_btn {
+        line-height: 32px;
+    }
+
+    .phone__img img {
+        left: 150px;
+        bottom: 120px;
+        width: 70%;
+    }
+
+    .cards-item {
+        flex-direction: row;
+        width: 573px;
+        margin: 0 auto;
+    }
+
+    .number {
+        height: 0;
+        width: 0;
+        padding: 25px;
+        position: relative;
+        top: 25px;
+    }
+
+    .cards__wrapper {
+        margin-left: 2rem;
+    }
+
+    .cards__wrapper h2,
+    .cards__wrapper p {
+        text-align: left;
+    }
+
+    .cards__wrapper h2 {
+        font-weight: 600;
+        font-size: 28px;
+    }
+
+    .profile__section {
+        height: 526px;
+        position: relative;
+        display: flex;
+    }
+
+    .profile__img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .profile__details {
+        position: absolute;
+        width: 514px;
+        height: 375px;
+        right: 70px;
+        top: 110px;
+    }
+
+    .profile__details::after {
+        content: url(./assets/images/bg-pattern-3.svg);
+        position: absolute;
+        right: 20px;
+        bottom: -100px;
+    }
+
+    .social__handles {
+        margin-bottom: 122px;
+    }
+}
+
+/* ------------------------------- Media Query 1440px */
+@media screen and (min-width: 1440px) {
+    .hero__section {
+        height: 730px;
+    }
+
+    .navbar {
+        padding: 56px 165px 0;
+    }
+
+    header h1 {
+        width: 635px;
+        font-size: 80px;
+        font-weight: 500;
+        line-height: 90px;
+        letter-spacing: 0;
+        margin-top: 40px;
+    }
+
+    .hero__section::before {
+        top: 117px;
+        left: -137px;
+    }
+
+    .hero__section::after {
+        top: 358px;
+        transform: translateX(28%);
+    }
+
+    .phone__img img {
+        left: 318px;
+        bottom: 229px;
+        width: 767px;
+    }
+
+    .wrapper {
+        height: 960px;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 1114px;
+        margin: 0 auto;
+    }
+
+    .cards-item {
+        flex-direction: column;
+        width: 345px;
+        margin: 0;
+    }
+
+    .cards-item h2,
+    .cards-item p {
+        text-align: center;
+    }
+
+    .cards__wrapper h2 {
+        margin-top: 56px;
+        margin-bottom: 28px;
+    }
+
+    .profile__section {
+        height: 647px;
+        width: 1112px;
+        margin: 0 auto;
+    }
+
+    .profile__img {
+        width: 477px;
+        height: 477px;
+    }
+
+    .profile__details {
+        width: 730px;
+        height: 413px;
+        right: 7px;
+        top: 145px;
+        padding: 64px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .profile__details h2 {
+        font-size: 56px;
+        font-weight: 500;
+        line-height: 64px;
+    }
+
+    .profile__details p {
+        font-size: 18px;
+        text-align: left;
+        font-weight: 400;
+        line-height: 32px;
+    }
+    
+    .profile__details a {
+        padding: 14.5px 32px;
+    }
+
+    .profile__details::after {
+        right: 85px;
+        bottom: -68px;
+    }
+}
