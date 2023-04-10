@@ -54,6 +54,7 @@ a {
     background-color: var(--dark-purple);
     height: 482px;
     color: var(--white);
+    clip-path: ellipse(200% 95% at 50% 0);
 }
 
 .navbar {
@@ -118,10 +119,12 @@ main {
 }
 
 .wrapper {
+    min-height: 1100px;
     background-color: var(--ghost-white);
     padding-bottom: 40px;
     padding: 1em;
     margin-bottom: 100px;
+    clip-path: ellipse(200% 95% at 50% 0);
 }
 
 .phone__img img {
